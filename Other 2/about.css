@@ -1,0 +1,190 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Hero Section */
+.hero {
+    background: url('gym\ bg0.jpg') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3.5em;
+    margin: 0;
+    color: #FF7F00; /* Orange for the main title */
+}
+
+.hero p {
+    font-size: 1.6em;
+    color: #fff; /* White for the supporting text */
+}
+
+/* Mission Section */
+.mission {
+    background-color: #ffffff;
+    padding: 60px;
+    text-align: center;
+}
+
+.mission h2 {
+    color: #FF7F00; /* Orange for section titles */
+    font-size: 2.2em;
+    margin-bottom: 20px;
+}
+
+.mission p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* Core Values Section */
+.core-values {
+    background: linear-gradient(135deg, #000000, #434343);
+    padding: 60px;
+}
+
+.core-values h2 {
+    color: #FF7F00;
+    text-align: center;
+    font-size: 2.2em;
+    margin-bottom: 40px;
+}
+
+.values-container {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.value {
+    flex: 1;
+    margin: 0 20px;
+    padding: 20px;
+    background-color: #433e3e;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.value img {
+    width: 120px;
+    height: 120px;
+}
+
+.value h3 {
+    color: #FF7F00; /* Orange for value titles */
+    margin-top: 15px;
+    font-size: 1.5em;
+}
+
+.value p {
+    font-size: 1.1em;
+    line-height: 1.5;
+    color:white;
+}
+
+/* Our Story Section */
+.our-story {
+    display: flex;
+    padding: 60px;
+    background: linear-gradient(135deg, #FF6600, #FF9472);
+}
+
+.story-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff; /* White text on orange background */
+}
+
+.story-text {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.story-text p{
+   text-align: justify;
+}
+
+.story-image {
+    flex: 1;
+}
+
+.story-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.story-text h2 {
+    color: #fff; /* White title */
+    font-size: 2.2em;
+    margin-bottom: 20px;
+}
+
+.story-text p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Meet the Team Section */
+.meet-team {
+    background-color: #f4f4f4;
+    padding: 60px;
+    text-align: center;
+}
+
+.meet-team h2 {
+    color: #FF7F00;
+    font-size: 2.2em;
+    margin-bottom: 30px;
+    margin-left: -120px;
+}
+
+.team-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.team-member {
+    flex: 1;
+    margin: 0 20px;
+    text-align: justify;
+    background: linear-gradient(135deg, #000000, #808080);
+    padding: 13px;
+    border-radius: 20px;
+}
+
+.team-member img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 60px;
+    
+}
+
+.team-member h3 {
+    margin-top: 15px;
+    color: #d71010;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.team-member p {
+    font-size: 1.1em;
+    line-height: 1.5;
+    color: #fff;
+}
+
+
