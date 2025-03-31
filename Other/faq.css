@@ -1,0 +1,45 @@
+.faq-section {
+    max-width: 800px;
+    margin: 150px auto;
+    text-align: left;
+}
+
+.faq-section h2 {
+    color: #FF6A00; /* Orange from the color scheme */
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+}
+
+.faq-question {
+    background-color: #333; /* Dark grey for buttons */
+    color: #fff; /* White text */
+    padding: 10px;
+    font-size: 18px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    outline: none;
+}
+
+.faq-answer {
+    background-color: #f2f2f2; /* Light grey for answers */
+    display: none;
+    padding: 15px;
+    font-size: 16px;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+.faq-question:hover {
+    background-color: #FF6A00; /* Orange on hover */
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}

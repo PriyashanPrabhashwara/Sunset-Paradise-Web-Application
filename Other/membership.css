@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+h1 {
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.membership-plans {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.price{
+   position: absolute;
+   bottom: -3px;
+   right: 20px;
+}
+
+/* Plan Cards */
+.plan-card {
+    background-color: #fff;
+    width: 30%;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease;
+    border: 4px solid transparent;
+    position: relative;
+}
+
+.plan-card:hover {
+    transform: translateY(-10px);
+    background-color:black;
+}
+
+.plan-card:hover h2{
+    color:#f91606;
+}
+
+.plan-card:hover p{
+    color:#f4f4f4;
+}
+
+.plan-card:hover ul li{
+    color:#f4f4f4;
+}
+
+/* Basic Plan Styles */
+.basic-plan {
+    border-color: #ff7f50;
+}
+
+/* Premium Plan Styles */
+.premium-plan {
+    border-color: #ff4500;
+}
+
+/* Plan Title */
+.plan-card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #333;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+
+
+
+/* Plan Features */
+.plan-card ul {
+    list-style-type: none;
+    font-size: 1rem;
+    text-align: left;
+    padding-left: 0;
+}
+
+.plan-card ul li {
+    margin-bottom: 12px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.plan-card ul li::before {
+    content: "✔";
+    color: #ff7f50;
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+}
+
+.plan-card img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 900px) {
+    .plan-card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 600px) {
+    .plan-card {
+        width: 100%;
+    }
+}
+
+/* Background Colors */
+body {
+    background:linear-gradient(rgb(60,60,60),rgb(0,0,0),rgb(50,50,50));
+}
+.container {
+    background:linear-gradient(rgb(60,60,60),rgb(0,0,0),rgb(50,50,50));
+    padding: 50px;
+}
+
+/* Color Scheme */
+h1 {
+    color: #ff4500;
+}

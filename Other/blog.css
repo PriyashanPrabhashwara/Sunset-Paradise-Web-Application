@@ -1,0 +1,185 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('gym\ bg0.jpg') center/cover no-repeat;
+}
+
+header {
+    color: #fff;
+    padding: 10px 30px;
+    text-align: center;
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: #ff6347;
+    width:63%;
+    border-radius: 30px;
+    
+}
+
+nav ul {
+    margin-top: 15px;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+    display: inline-block;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    transition:color 0.5s
+}
+
+nav ul li a:hover {
+  color:#389b0d;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #389b0d;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+  width: 100%;  /* Underline grows when hovered */
+}
+
+.btn1{
+    background-color: #ff6347;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 18px;
+    margin: 5px;
+    border: 3px solid brown;
+    transition: all 0.3s;
+}
+
+.btn1:hover{
+    color:#ff6347;
+    background-color: #333;
+}
+
+/* Blog hero section */
+.blog-hero {
+    background: url('gym\ bg0.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.blog-hero h1 {
+    font-size: 3rem;
+    color: #ff6347; /* Orange */
+}
+
+/* Category filter */
+.category-filter {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #ff6347;
+}
+
+.category-filter a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.category-filter a:hover {
+    color: #ff0048; /* Orange on hover */
+}
+
+/* Blog post styling */
+.blog-posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.post {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.post img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.post h2 {
+    color: #333;
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.post p {
+    color: #666;
+}
+
+.read-more {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background-color: #ff6347;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.read-more:hover {
+    background-color: #e60045; /* Darker orange */
+}
+
+/* Blog post content page */
+.blog-post-content {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgb(74, 68, 68);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.blog-post-content h1 {
+    color: #c11313;
+    font-size: 2rem;
+}
+
+.blog-post-content img {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+.blog-post-content .content {
+    color: #f8f5f5;
+    line-height: 1.6;
+}

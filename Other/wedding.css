@@ -1,0 +1,582 @@
+/* General Styles */
+body {
+    font-family: 'Lora', serif;
+    margin: 0;
+    padding: 0;
+    
+    color: #444;
+    background-color: #f9f9f9;
+}
+
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 8%;
+    background: linear-gradient(to right, #ff7f50, #444444);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px; /* Increased space between links */
+    align-items: center;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+    padding: 5px 0;
+    transition: all 0.3s ease;
+}
+
+/* Underline Animation */
+nav ul li a::after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 0;
+    background: #ffffff;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    color: #7e7b7b;
+}
+
+p {
+    margin: 0 0 15px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d87c61;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #c06a50;
+}
+
+/* Introduction Section */
+.wedding-intro {
+    background: url('https://images.pexels.com/photos/220067/pexels-photo-220067.jpeg?auto=compress&cs=tinysrgb&w=600') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.wedding-intro h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.wedding-intro p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Services Section */
+
+
+.wedding-services {
+    padding: 50px 10px;
+  }
+  
+  .services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .service-card {
+    position: relative;
+    width: 100%;
+    perspective: 1000px;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: transform 0.8s ease-in-out;
+  }
+  
+  .service-card:hover {
+    transform: rotateY(180deg);
+  }
+  
+  /* Card Front Styling */
+  .card-front,
+  .card-back {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.6s ease-in-out;
+  }
+  
+  .card-front {
+    background-color: #fff;
+    transform: rotateY(0);
+  }
+  
+  .card-front img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+  }
+  
+  .card-front h3 {
+    margin: 0;
+    padding: 10px;
+    background-color: #f85b5b;
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 100%;
+  }
+  
+  /* Card Back Styling */
+  .card-back {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    transform: rotateY(180deg);
+  }
+  
+  .card-back h3 {
+    margin-bottom: 10px;
+    color: #f85b5b;
+  }
+  
+  .card-back p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #ddd;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .card-front h3,
+    .card-back h3 {
+      font-size: 1rem;
+    }
+  
+    .card-back p {
+      font-size: 0.8rem;
+    }
+  }
+
+/* Wedding Packages Section */
+.wedding-section {
+    padding: 50px 20px;
+    background-color: #fdf5f0;
+    text-align: center;
+}
+
+.wedding-section .section-title {
+    font-size: 2.5rem;
+    color: #d87c61;
+    margin-bottom: 30px;
+}
+
+.packages-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.modal img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.close-btn {
+    float: right;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+}
+
+/* Gallery Section */
+.wedding-gallery {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.wedding-gallery h2 {
+    font-size: 2.5rem;
+    color: #d87c61;
+    margin-bottom: 30px;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.gallery-container img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05);
+}
+
+/* Testimonials Section */
+
+.wedding-testimonials {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    margin-top: 250px;
+  }
+  
+  .wedding-testimonials h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .testimonial-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none; /* Hides scrollbar in Firefox */
+  }
+  
+  .testimonial-container::-webkit-scrollbar {
+    display: none; /* Hides scrollbar in Chrome/Safari */
+  }
+  
+  .testimonial {
+    flex: 0 0 300px; /* Ensures cards are fixed-width */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    scroll-snap-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .testimonial:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .testimonial p {
+    font-style: italic;
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    line-height: 1.5;
+  }
+  
+  .testimonial h4 {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #f85b5b;
+    font-weight: bold;
+  }
+  
+  .testimonial img {
+    margin-top: 10px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #f85b5b;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .testimonial-container {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .testimonial {
+      margin: 0 auto;
+    }
+  }
+  
+/* Inquiry Form Section */
+
+.inquiry-form {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.inquiry-form h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+    transition: border-color 0.3s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+    background-color: #fff;
+}
+
+/* Button */
+button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Validation */
+input:invalid,
+select:invalid,
+textarea:invalid {
+    border-color: #dc3545;
+}
+
+input:valid,
+select:valid,
+textarea:valid {
+    border-color: #28a745;
+}
+
+/* Message Box */
+textarea {
+    resize: none;
+    min-height: 80px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .inquiry-form {
+        padding: 15px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
+
+/* Countdown Section */
+.wedding-countdown {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#wedding-countdown h2 {
+    font-size: 2.5rem;
+    color: #d87c61;
+    margin-bottom: 20px;
+}
+
+#countdown {
+    font-size: 2rem;
+    color: #444;
+    margin-top: 10px;
+}
+
+
+header {
+    text-align: center;
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    padding: 20px;
+    color: white;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+/* Package Grid */
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Package Container */
+.package-container {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.package-container:hover {
+    transform: scale(1.03);
+}
+
+.package-image {
+    width: 100%;
+}
+
+.package-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.package-details {
+    padding: 15px;
+    text-align: left;
+}
+
+.package-details h2 {
+    font-size: 1.5rem;
+    color: #ff6b6b;
+    margin-bottom: 10px;
+}
+
+.package-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.package-features li {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+.package-features li i {
+    margin-right: 10px;
+    color: #ff6b6b;
+}
+
+.package-price, .package-deposit {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Section Styles */
+#activities, #activity-detail {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+

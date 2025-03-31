@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2d2d2d; /* Dark grey for background */
+    color: #f1f1f1; /* Light grey text */
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #333333; /* Dark grey for container */
+    border: 1px solid #555555;
+    border-radius: 8px;
+}
+
+h2, h3 {
+    color: #ff6600; /* Orange for headings */
+}
+
+form {
+    margin-top: 20px;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #555555;
+    border-radius: 4px;
+    background: #4d4d4d; /* Darker grey for input fields */
+    color: #f1f1f1;
+}
+
+input[type="file"] {
+    border: none;
+    
+}
+
+.btn {
+    background-color: #ff6600; /* Orange button */
+    color: #f1f1f1;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background-color: #cc5200; /* Darker orange on hover */
+}
+
+.review-card {
+    border: 1px solid #555555;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 4px;
+    background: #3a3a3a; /* Grey for review cards */
+    transition: transform 0.3s ease;
+}
+
+.review-card:hover {
+    transform: scale(1.02);
+}
+
+.review-card img {
+    max-width: 110px;
+    margin: 10px 0;
+    border-radius: 50%; /* Circular image */
+}
+
+.star-rating {
+    color: #2c2b2b; /* Orange stars */
+    font-size: 20px;
+}
+
+.star {
+    display: inline-block;
+    margin-right: 2px;
+}
+
+.star.filled {
+    color: #ff6600; /* Filled star color */
+}
