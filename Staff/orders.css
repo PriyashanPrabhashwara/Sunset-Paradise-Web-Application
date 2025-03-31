@@ -1,0 +1,111 @@
+/* General Page Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f4f6f9;
+    color: #333;
+    margin: 0;
+    
+}
+
+/* Main container */
+h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-left: 250px;
+    color: #222;
+}
+
+/* Search Bar */
+#orderSearch {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px;
+    margin-left: 250px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    transition: 0.3s;
+}
+
+#orderSearch:focus {
+    border-color: #ff7b00;
+    box-shadow: 0px 0px 6px rgba(255, 123, 0, 0.5);
+}
+
+/* Table Styling */
+table {
+    width: 82%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-left: 250px;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+    background: #ff7b00;
+    color: #fff;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+tr:hover {
+    background: rgba(255, 123, 0, 0.1);
+}
+
+/* Status Dropdown */
+select {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+select:hover {
+    border-color: #ff7b00;
+}
+
+/* Actions Button */
+a {
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #ff7b00;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    table {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+
+    #orderSearch {
+        width: 100%;
+    }
+}
